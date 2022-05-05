@@ -1,0 +1,174 @@
+
+.game{
+    width: 1400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url(./img/dium.jpg);
+}
+
+
+
+#player{
+    width: 100px;
+    height: 150px;
+    background-image: url(./img/messi-removebg-preview1.png);
+    background-size: 100px 150px ;
+    position: relative;
+    top: 355px;
+    
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0%{
+        top: 365px;
+    }
+    30%{
+        top: 300px;
+    }
+    50%{
+        top: 275px;
+    }
+    80%{
+        top: 300px;
+    }
+    100%{
+        top: 365px;
+    }
+}
+
+
+
+#cone{
+    width: 40px;
+    height: 60px;
+    position: relative;
+    top: 299px;
+    left: 1363px;
+    background-image: url(./img/cone-removebg-preview.png);
+    background-size: 40px 60px ;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block{
+    0%{
+        left: 1363px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    left: 500px;
+}
+
+#gameover{
+    font-size: 70px;
+    margin-left: 560px; 
+    margin-top: -150px;
+    display: none;
+    color: black;
+}
+
+#btn{
+    background-color: yellow;
+    height: 70px;
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 700px; 
+    margin-top: 20px;
+    
+}
+
+@media only screen and (max-width: 420px){
+    .game{
+        width: 320px;
+        height: 115px;
+
+    }
+
+    #player{
+        width: 35px;
+        height: 53px;
+        background-image: url(./img/messi-removebg-preview1.png);
+        background-size: 35px 53px ;
+        position: relative;
+        top: 65px;
+        
+    }
+
+    #cone{
+        width: 10px;
+        height: 15px;
+        top: 50px;
+        left: 308px;
+        background-size: 10px 15px ;
+    }
+
+    #score{
+        font-size: 15px;
+        top: 7px;
+        left: 115px;
+    }
+
+    #gameover{
+        font-size: 10px;
+        margin-left: 128px ;
+        margin-top: -34px;
+        display: none;
+    }
+
+    @keyframes jump{
+        0%{
+            top: 40px;
+        }
+        30%{
+            top: 35px;
+        }
+        50%{
+            top: 30px;
+        }
+        80%{
+            top: 35px;
+        }
+        100%{
+            top: 40px;
+        }
+    }
+
+    #btn{
+        height: 16px;
+        font-size: 5px;
+        margin-left: 160px; 
+        margin-top: 4.5px;
+
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .game{
+        margin-top: 50px;
+        width: 600px;
+        height: 200px;
+    }
+    #player{
+        top: 150px;
+        width: 35px;
+        height: 53px;
+        background-size: 35px 53px;
+    }
+
+}
+
